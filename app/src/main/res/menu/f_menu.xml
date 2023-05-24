@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Dashboard"
+        android:icon="@drawable/dashboard"
+        android:id="@+id/dash_food"
+        >
+    </item>
+    <item
+        android:title="Items"
+        android:icon="@drawable/itmes"
+        android:id="@+id/all_items"
+        >
+    </item>
+    <item
+        android:title="Add Item"
+        android:icon="@drawable/add"
+        android:id="@+id/add_item"
+
+        >
+
+    </item>
+
+
+
+    <item
+        android:title="Profile"
+        android:icon="@drawable/profile"
+        android:id="@+id/profile"
+        />
+
+
+<item
+    android:title="Invoice"
+    android:icon="@drawable/invoice"
+    android:id="@+id/invoice"/>
+</menu>

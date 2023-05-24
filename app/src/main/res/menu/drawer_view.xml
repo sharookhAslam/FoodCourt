@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<group android:checkableBehavior="single">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/nav_first_fragment"
+        android:icon="@drawable/profile"
+        android:title="Profile"
+        />
+    <item
+        android:id="@+id/nav_second_fragment"
+        android:icon="@drawable/history"
+        android:title="History"
+
+        />
+    <item
+        android:id="@+id/nav_third_fragment"
+        android:icon="@drawable/support"
+        android:title="Support" />
+</group>
+
+
+    <item android:title="Authentication">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:icon="@drawable/logout"
+                    android:title="Logout"
+                    android:id="@+id/logout"
+                    />
+                <item
+                    android:id="@+id/referal"
+                    android:icon="@drawable/share"
+                    android:title="@string/referral"/>
+                <item
+                    android:id="@+id/current_loc"
+                    android:icon="@drawable/location"
+                    android:title= "Your currrent Location" />
+            </group>
+        </menu>
+    </item>
+</menu>

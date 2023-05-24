@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backw"
+    android:gravity="bottom"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/logo"
+            android:layout_weight="3"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="30dp"
+            android:id="@+id/sm"
+            app:cardElevation="10dp"
+            android:layout_gravity="center"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:weightSum="12">
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome!"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    />
+                <EditText
+
+                    android:textColor="@color/black"
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:hint="Name"
+                    android:textSize="20sp"
+                    android:outlineProvider="background"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:visibility="visible"
+                    android:textColorHint="#C8C4C2"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:backgroundTint="#CD2F28"
+                    android:layout_margin="25dp"
+                    android:layout_weight="2"
+                    />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="25dp"
+                    android:layout_weight="2"
+                    android:backgroundTint="#CD2F28"
+                    android:hint="Email"
+                    android:textSize="20sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/black"
+                    android:textColorHint="#C8C4C2"
+                    app:layout_constraintBottom_toTopOf="@+id/editText3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+                <EditText
+
+                    android:id="@+id/editText3"
+                    android:layout_weight="2"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="25dp"
+                    android:textSize="20sp"
+                    android:backgroundTint="#CD2F28"
+                    android:hint="Password"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/black"
+                    android:textColorHint="#C8C4C2"
+                    app:layout_constraintBottom_toTopOf="@+id/signup"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editText2"></EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Forgot Password?"
+                        android:layout_marginStart="20dp"
+                        android:id="@+id/fp"
+                        android:textColor="#C6C5C5"
+                        />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/signup"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    app:backgroundTint="#9C1A1A"
+                    android:text="Sign up"
+                    android:textColor="#fff"
+
+                    />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:id="@+id/login"
+                    android:text="Already a Member? Login"
+                    android:textColor="#C6C5C5"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/prgrssLO">
+
+        <ProgressBar
+            android:id="@+id/prgrss"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="20dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+</RelativeLayout>

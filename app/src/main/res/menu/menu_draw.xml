@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Dashboard"
+        android:icon="@drawable/dashboard"
+        android:id="@+id/dash_SM"
+        >
+    </item>
+    <item
+        android:title="Shops"
+        android:icon="@drawable/shop"
+        android:id="@+id/shops_SM"
+        >
+    </item>
+    <item
+        android:title="Add Shop"
+        android:icon="@drawable/add"
+        android:id="@+id/add_shop"
+
+        />
+
+
+    <item
+        android:title="Profile"
+        android:icon="@drawable/profile"
+        android:id="@+id/sm_pro" />
+
+
+
+</menu>

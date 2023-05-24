@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.foodcourt">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name2"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.FoodCourt"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Change_password"
+            android:exported="false" />
+        <activity
+            android:name=".Forgot_Password"
+            android:exported="false" />
+        <activity
+            android:name=".CardPayment"
+            android:exported="false" />
+        <activity
+            android:name=".fc_payemnt"
+            android:exported="false" />
+        <activity
+            android:name=".admin_settings"
+            android:exported="false"
+            android:label="@string/title_activity_admin_settings"
+            android:theme="@style/AppTheme.FoodCourt.NoActionBar" />
+        <activity
+            android:name=".all_orders_admin"
+            android:exported="false" />
+        <activity
+            android:name=".Email_varify"
+            android:exported="false" />
+        <activity
+            android:name=".payment_option"
+            android:exported="false" />
+        <activity
+            android:name=".Shipment_details"
+            android:exported="false" />
+        <activity
+            android:name=".cart"
+            android:exported="false" />
+        <activity
+            android:name=".order_page"
+            android:exported="false" />
+        <activity
+            android:name=".Items_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.BackgroundImageStyle" />
+        <activity
+            android:name=".Signing"
+            android:exported="true"
+            android:theme="@style/AppTheme.BackgroundImageStyle" />
+        <activity
+            android:name=".User_Profile"
+            android:exported="true" />
+        <activity android:name=".Profile_Update" />
+        <activity android:name=".CurrentLocLoad" />
+        <activity android:name=".admin_panel" />
+        <activity android:name=".Trial_login" />
+        <activity android:name=".Fc_profile" />
+        <activity android:name=".Sh_malls" />
+        <activity android:name=".Admin_shopingmall_list" />
+        <activity android:name=".Add_mall" />
+        <activity android:name=".OTP_recieve" />
+        <activity android:name=".Otp_send" />
+        <activity android:name=".food_courts_all" />
+        <activity android:name=".Items_page" />
+        <activity android:name=".temp_cart" />
+        <activity android:name=".user_payment" />
+        <activity android:name=".Admin_all_user" />
+    </application>
+
+</manifest>
